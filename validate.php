@@ -1,0 +1,260 @@
+<html>
+    
+	 <head>
+		  <link rel="stylesheet" type="text/css" href="resources/styling/styles.css">
+	      <title>D.M.C Encyclopedia -Contact</title>
+		  <link rel="shortcut icon" type="image/x-icon" href="resources/images/ico.png">
+		  <style>
+		   
+		   h1    {color:red}
+		   p     {color:white}
+		   pre   {font-family:sketchflow print}
+		   body  {margin-left:100px; 
+		          margin-right:100px;
+				  background-image: url("resources/images/bg.jpg");
+				  background-repeat:no-repeat;
+				  background-position:center;
+				  background-size: 1200px 4000px;
+				 }
+
+		  </style>
+		  <meta name="description" content="Teliki Ergasia">
+		  <meta name="copyright" content="2014-2015">
+		  <meta http-equiv="refresh" content="100">
+		  <meta http-equiv="content-type" charset="UTF-8">
+		  
+		  <script>
+		  var i=1;
+		  function validateName() {
+            var x = document.forms["myform"]["name"].value;
+            if (x == null || x == "") {
+			i=0;
+            alert("Please enter a valid name!");
+			window.location.reload();
+            return false;
+                           }
+						   
+                                   }
+								   
+								     function validateSurname() {
+            var x = document.forms["myform"]["surname"].value;
+            if (x == null || x == "") {
+			i=0;
+            alert("Please enter a valid surname!");
+			window.location.reload();
+            return false;
+                           }
+						   
+                                   }
+								   
+								   
+								   function validatePhone() {
+            var x = document.forms["myform"]["telephone"].value;
+            if (x == null || x == "") {
+			i=0;
+            alert("Please enter a valid phone number!");
+			window.location.reload();
+            return false;
+                           }
+						   
+                                   }
+								   
+          function validateMessage() {
+            var x = document.forms["myform"]["message"].value;
+            if (x == null || x == "") {
+			i=0;
+            alert("Please type the message you want to send us!");
+			window.location.reload();
+            return false;
+                           }
+                                   }
+			
+         function validateMail() {
+           var x = document.forms["myform"]["email"].value;
+           var atpos = x.indexOf("@");
+           var dotpos = x.lastIndexOf(".");
+           if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+		   i=0;
+           alert("Please enter a valid e-mail address");
+		   window.location.reload();
+           return false;
+                                                                  }
+                                 }	
+          function successCheck() {
+		  
+		   if (i==1)
+          {
+           alert("Your message has been sent successfully!");
+		   window.location.reload();
+          }		  
+		  
+		                           }
+		  
+         </script>	
+								   
+	</head>	   
+	
+	<body>
+	  <div id="container">
+	  <header>
+	         
+			 <a href="main.html" id="top"><img src="resources/images/upbar.png" alt="DMC Bar Image"></a>
+			 <p id="arxik"><span style="color:red;"><i>Welcome</i></span> to our <span style="color:yellow;">D</span>iecast <span style="color:yellow;">M</span>odel <span style="color:yellow;">C</span>ars <span style="color:#FF4719;">Encyclopedia</span></p>
+			 <hr size="10%" noshade color="black">
+	        		 
+	  </header>	
+      
+      <nav>
+	       <hr>
+           <ul id="menu">
+                       <li><A HREF="main.html"><span style="font-size:30px; color:black;"><b>Home</b></span></A></li>
+		               <li><A HREF="news.html"><span style="font-size:30px; color:black;"><b>News</b></span></A></li>
+                       <li><A HREF="quiz.html"><span style="font-size:30px; color:black;"><b>D.M.C Quiz</b></span></A></li>
+                       <li><A HREF="contact.html"><span style="font-size:30px; color:black;"><b>Contact</b></span></A></li>
+					   <li><A HREF="about.html"><span style="font-size:30px; color:black;"><b>About</b></span></A></li>
+          </ul>	 
+          <hr>
+      </nav>
+	  <hr size="10%" noshade color="black">
+	  
+	  <h3><u>Contact Us Directly</u></h3>
+		   
+                  <form name="myform" action="http://localhost/ergasia/validate.php" method="post" >
+                    <fieldset id="field1">
+                     <legend>Required data:</legend>
+                     <label for="email">Your E-mail:</label>
+                     <br>
+                     <input type="text" name="themail" id="email">
+                     <br>
+                     <label for="name">Your Name:</label>
+                     <br>
+                     <input type="text" name="thename" id="name">
+                     <br>
+					 <label for="surname">Your SurName:</label>
+                     <br>
+					 <input type="text" name="thesurname" id="surname">
+					 <br>
+					 <label for="telephone">Your Telephone No.:</label>
+                     <br>
+					 <input type="tel" name="thephone" id="telephone">
+					 <br>
+                     <label for="message">Your Message:</label>
+                     <br>
+                     <textarea id="message" name="themessage"></textarea>
+                     <br>
+                    </fieldset>
+					
+					<fieldset id="field2">
+                             <legend>Optional data:</legend>
+                             <label for="signature">Your Signature (it will show up under your message):</label>
+                             <br>
+                             <input type="text" id="signature">
+                             <br>
+                             <label for="nickname">Your Nickname:</label>
+                             <br>
+                             <input type="text" id="nickname">
+                   </fieldset>
+                   <br>
+				   
+				   <fieldset id="field3">
+				      <legend>Quick Survey (optional)</legend>
+					  <fieldset>
+					    <legend>How many diecast models do you own? </legend>
+						<input type="radio" value="none" name="accs">0
+						<br>
+						<input type="radio" value="one-five" name="accs">1-5
+						<br>
+						<input type="radio" value="sex-ten" name="accs">6-10
+						<br>
+						<input type="radio" value="ten-twenty" name="accs">10-20
+						<br>
+						<input type="radio" value="more" name="accs">More
+						<br>
+					  </fieldset>
+                      <fieldset>
+                         <legend>Are you satisfied from our website overall?</legend>
+                         <select>
+                                <option value="none">Not at all!	
+								<optgroup label="Medium Level">
+                                 <option value="tiny">A bit	
+                                 <option value="notmuch">Quite A Bit
+                                </optgroup>
+                                <optgroup label="Big Level">
+                                  <option value="soso">So-so
+								  <option value="alot">A lot
+								  <option value="verymuch">Very Much
+								</optgroup>
+                         </select>
+                      </fieldset>
+                 </fieldset>
+                 <br>				 
+				   
+                   <button type="submit"><i><u>Submit</u></i></button>
+                </form>	
+				 	
+	  
+	 <br>
+	 <?php 
+		  $i=1;
+		  $mail= $_POST["themail"];
+		  $name= $_POST["thename"];
+		  $surname= $_POST["thesurname"];
+		  $phone= $_POST["thephone"];
+		  $message= $_POST["themessage"];
+		  echo "<span style='color:white';><b><u>NOTES:</u></b></span><br>";
+		  
+		  if (!filter_var($mail, FILTER_VALIDATE_EMAIL)) {
+                echo "<span style='color:red;'>Please enter a valid e-mail!</span><br>";
+				$i=0;
+                                                          }
+		  
+		 if(!isset($name) || trim($name) == '')
+         {
+         echo "<span style='color:red;'>Please enter a valid name!</span><br> ";
+		 $i=0;
+         }
+		  
+		  
+		  if(!isset($surname) || trim($surname) == '')
+         {
+         echo "<span style='color:red;'>Please enter a valid surname!</span><br> ";
+		 $i=0;
+         }
+		  
+		  if(!isset($phone) || trim($phone) == '')
+         {
+         echo "<span style='color:red;'>Please enter a valid phone !</span><br> ";
+		 $i=0;
+         }
+		 
+		 if(!isset($message) || trim($message) == '')
+         {
+         echo "<span style='color:red;'>Please fill out the message you want to send us !</span><br> ";
+		 $i=0;
+         }
+		  
+		  if ($i==1)
+		  {
+			  echo "<span style='color:#00FF00;'>Your message has been sent successfully!</span><br>";
+		  }
+		  
+		  
+		  ?>
+	  
+	  
+
+       <div id="arrow">
+	  <a href="#top"><img src="resources/images/uparr.png" alt="Back To Top"></a>
+	 </div>
+      
+	  
+     <hr><hr>
+	 <footer>
+	  <p> Created by: Kollias Tasos</p>
+      <p>© Copyright D.M.C Encyclopedia</p>
+	  <p>2014-2015</p>
+    </footer>
+    </div>
+    </body>	
+
+</html>	

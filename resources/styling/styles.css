@@ -1,0 +1,43 @@
+body {
+      font-family: "calibri";
+      background-color:#A62100;
+      font-size:18px;
+      color:white;
+	}
+#arxik{
+        font-size:60px;
+		font-family:sketchflow print;
+		color:black;
+		text-align:center;
+		text-shadow: 5px 5px 10px #00FFFF;
+	  }
+#menu li {
+		display:inline;
+		border:2px solid;
+		border-radius:10px;
+		box-shadow:10px 10px 5px black;
+		border-style:ridge;
+		margin:63px;
+		text-align:center;
+	   }
+#menu li:hover{
+			  color:yellow;
+		      font-style:italic;
+               background-color: orange;
+			}
+nav {background-color:#FF4719;}
+footer {
+		text-align:right; 
+		background-color:#505050;
+	 }
+#lin1 {text-shadow: 5px 5px 10px white;text-align:center;}
+#arrow {text-align:right;}
+#contact{background-color:#505050;}
+#brands {text-align:center;}
+#backbrand{text-align:right;}
+#container {
+          width:1200px;
+          margin:0 auto;
+		 }
+
+        
