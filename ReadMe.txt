@@ -1,3 +1,11 @@
-1) Open main.html ONLY. You do not need to open any other files. Just ignore them.
+# Diecast Model Cars Encyclopedia #
 
-2) For XAMPP (My SQL) just make a folder called "ergasia" in htdocs directory and paste all of this folder's contents.
+Diecast Model Cars (DMC) Encyclopedia is a simple website that is meant to be an encyclopedia for diecast model cars collectors. It's made quite early (many years ago) so it's not
+very polished.
+
+It offers:
+* Model car presentation by brand
+* News about the DMC community
+* A DMC quiz
+* Contact Form
+* About Page
